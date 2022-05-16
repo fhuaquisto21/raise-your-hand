@@ -1,0 +1,13 @@
+{
+    "name": "Raise Your Hand",
+    "description": "Extensión para levantar la mano en google meet.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+          "matches": ["https://meet.google.com/**-**-**"],
+          "js": ["content.js"]
+        }
+    ]
+}
